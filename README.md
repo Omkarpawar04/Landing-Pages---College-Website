@@ -17,7 +17,7 @@ Welcome to Finxl (Courses Website) **Landing Pages Repository**! Here, you'll fi
 
 
 ## 🚀 Live Demo  
-🔗 [View Landing Page]([https://financial-modelling-equity-research.netlify.app/])  
+🔗 [View Landing Page](https://financial-modelling-equity-research.netlify.app/)
 
 ## 📩 Contact  
 If you have any questions, feel free to reach out!  
