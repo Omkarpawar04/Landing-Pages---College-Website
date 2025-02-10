@@ -1,6 +1,6 @@
 # 🚀 Landing Pages Collection  
 
-Welcome to my **Landing Pages Repository**! Here, you'll find modern and responsive landing pages built using **HTML, CSS, JavaScript, and Bootstrap**.  
+Welcome to Finxl (Courses Website) **Landing Pages Repository**! Here, you'll find modern and responsive landing pages built using **HTML, CSS, JavaScript, and Bootstrap**.  
 
 ## 🌟 Preview  
 ![Landing Page Preview](registration-form/Landing-Img.png)  
