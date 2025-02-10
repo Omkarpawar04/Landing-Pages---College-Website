@@ -1,0 +1,1683 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>Finxl.in</title>
+  <meta name="description" content="">
+  <meta name="keywords" content="">
+
+  <!-- Favicons -->
+  <link href="assets/img/icon.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com" rel="preconnect">
+  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+  <link href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" rel="stylesheet" />
+  <link href='https://fonts.googleapis.com/css?family=Raleway:400,500,600,700' rel='stylesheet' type='text/css'>
+
+  <!-- Main CSS File -->
+  <link href="assets/css/main.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css">
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="https://unpkg.com/swiper@9.1.0/swiper-bundle.min.css" />
+
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet" />
+  <link rel='stylesheet' href='https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css'>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+    integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <!-- new links -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@7.12.15/dist/sweetalert2.all.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</head>
+
+<body class="index-page">
+  <!-- <div class="modal-overlay"></div>
+  <div class="modal">
+    <div class="bg-shape"></div>
+    <div class="close-btn">
+      <i class="fa-solid fa-xmark"></i>
+    </div>
+
+    <div class="left">
+      <div class="discount-text">
+        <h3>Special Sale</h3>
+      </div>
+
+      <div class="discount">
+        <p>Save up to</p>
+        <div class="discount-percent">45%</div>
+      </div>
+    </div>
+
+    <div class="right">
+      <h2>
+        Get access to the <br />
+        best Discount on Courses
+      </h2>
+      <p>Click below 👇</p>
+      <button id="get-discount-btn" class="discount-btn">Get Discount</button>
+    </div>
+  </div> -->
+  <!-- Popup Registration Form -->
+  <div class="full-overlay"></div>
+  <div class="popup">
+    <img class="img1" src="./assets/img/image.png">
+    <div class="close-btn">&times;</div>
+    <div class="form">
+      <h1>Are you looking for Personalized Career Advice? <img class="img2" src="./assets/img/career-goal.gif"></h1>
+         <h2><img class="img2" src="./assets/img/conversation.gif">Let our Expert Speak to you <img class="img2" src="./assets/img/phone.gif"></h2> 
+      <div class="form-element">
+        <label for="popup-name">Name</label>
+        <input type="text" id="popup-name" name="name" required>
+      </div>
+      <div class="form-element">
+        <label for="popup-contact-number">Contact Number</label>
+        <input type="text" id="popup-contact-number" name="contact_number" required>
+      </div>
+      <div class="form-element">
+        <button type="submit">Submit</button>
+      </div>
+    </div>
+    <div class="loading-container" style="display: none;"><i class="fas fa-spinner fa-spin" style="font-size: 24px; color: #007bff;"></i></div>
+    <div class="success-message" style="display: none; color: blue;">Thank you for reaching out! Our mentor will connect with you shortly</div>
+  </div>
+  <!-- End of Popup Registration Form -->
+
+
+  
+
+  <header id="header" class="header sticky-top">
+    <div class="topbar d-flex align-items-center">
+      <div class="container d-flex justify-content-center justify-content-md-between">
+        <div class="contact-info d-flex align-items-center">
+          <i class="bi bi-envelope d-flex align-items-center"><a href="mailto:info@finxl.in">info@finxl.in</a></i>
+          <a href="tel:+918109130909">
+            <i class="bi bi-phone d-flex align-items-center ms-4"><span>+91 81091 30909 / +91 96616 26371</span></i></a>
+        </div>
+        <div class="social-links d-none d-md-flex align-items-center">
+          <a href="https://x.com/IndiaFinxl" class="twitter" target="_blank">
+            <i class="bi bi-twitter-x"></i>
+          </a>
+          <a href="https://www.youtube.com/@finxlindia" class="youtube" target="_blank">
+            <i class="bi bi-youtube"></i>
+          </a>
+          <a href="https://www.facebook.com/finxl.inc/" class="facebook" target="_blank"><i
+              class="bi bi-facebook"></i></a>
+          <a href="https://www.instagram.com/finxl.india/" class="instagram" target="_blank"><i
+              class="bi bi-instagram"></i></a>
+          <a href="https://www.linkedin.com/company/finxl-corporate-finance-institute/" class="linkedin"
+            target="_blank"><i class="bi bi-linkedin"></i></a>
+        </div>
+      </div>
+    </div><!-- End Top Bar -->
+
+    <div class="branding d-flex align-items-cente">
+      <div class="container position-relative d-flex align-items-center justify-content-between">
+        <a href="https://finxl.in" class="logo d-flex align-items-center" target="_blank">
+          <!-- Uncomment the line below if you also wish to use an image logo -->
+          <img src="assets/img/finxl logo.png" alt="">
+        </a>
+        <nav id="navmenu" class="navmenu">
+          <ul>
+            <li><a href="#hero" class="active">Home</a></li>
+            <li><a href="#about-us">About</a></li>
+            <li><a href="#course-features">Features</a></li>
+            <li><a href="#features">Syllabus</a></li>
+            <li><a href="#featured-services">Courses</a></li>
+            <li><a href="#placed-students">Testimonials</a></li>
+            <li><a href="#faq">FAQ</a></li>
+          </ul>
+          <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+        </nav>
+      </div>
+
+    </div>
+    <div class="running-ad">
+      A special offer ends in 👉
+      <div id="time-box">
+        <div id="countdown">
+          <p>
+            <span class="numbers" id="days">00</span>
+            <span class="textshow">DAYS</span>
+          </p>
+          <p>
+            <span class="numbers" id="hours">00</span>
+            <span class="textshow">HRS</span>
+          </p>
+          <p>
+            <span class="numbers" id="minutes">00</span>
+            <span class="textshow">MINS</span>
+          </p>
+          <p>
+            <span class="numbers" id="seconds">00</span>
+            <span class="textshow">SECS</span>
+          </p>
+        </div>
+      </div>
+    </div>
+  </header>
+
+
+
+
+  <main class="main">
+
+    <!-- Hero Section -->
+    <section id="hero" class="hero section light-background">
+      <div class="container">
+        <!-- Left Section -->
+        <div class="col-lg-8 order-4 order-lg-2" data-aos="zoom-out">
+          <div class="Left-content">
+            <h1>Financial Modelling Equity Research</h1>
+            <h4>Apply for Short Term Financial Analyst Course</h4>
+            <h5 class="v1">Courses, certifications and with 100% placement assistance to help you land your dream job.</h5>
+            <!-- <div class="info-content">
+              <ul>
+                <li><i class="fas fa-calendar-alt"></i> 3.5 months duration</li>
+              </ul>
+              <ul> 
+                <li><i class="fas fa-map-marker-alt"></i> Online / Offline</li>
+              </ul>
+            </div> -->
+            <div class="stats-section">
+              <div class="f-flex justify-content-around align-items-center text-light ">
+                <div class="information">
+                  <img src="assets/img/graduating-student.png">
+                  <div class="stat-box text-left">
+                    <h5>15000+</h5>
+                    <p>students</p>
+                  </div>
+                </div>
+                <div class="information">
+                  <img src="assets/img/clock-app.png">
+                  <div class="stat-box text-left">
+                    <h5>3.5 Months</h5>
+                    <p>Duration</p>
+                  </div>
+                </div>
+                <div class="information">
+                  <img src="assets/img/technique.png">
+                  <div class="stat-box text-left">
+                    <h5>Skills</h5>
+                    <p>Job Ready</p>
+                  </div>
+                </div>
+                <div class="information">
+                  <img src="assets/img/quality.png">
+                  <div class="stat-box text-left">
+                    <h5>Specialization</h5>
+                    <p> Core Finance</p>
+                  </div>
+                </div>
+                <div class="information">
+                  <img src="assets/img/audio-lecture.png">
+                  <div class="stat-box text-left">
+                    <h5>Hybrid </h5>
+                    <p>Learning Mode</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="sticker">Limited Seats Available
+              <!-- <img src ="assets/img/ls.png"> -->
+            </div>
+            <div id="container">
+              <div class="t-l"  style="background-image: url('./assets/img/text-bg.jpg');">
+                Get Expertise in
+              </div>
+              <div id="carousel-wrapper">
+                <div id="carousel" data-state="1">
+                  <figure>Financial Modelling</figure>
+                  <figure>Investment Banking</figure>
+                  <figure>Equity Research</figure>
+                  <figure>Valuations</figure>
+                  <figure>Financial P & A</figure>
+                  <figure>Entrepreneurship</figure>
+                </div>
+              </div>
+              <div class="r-l">
+                from Finxl
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="svg-container">
+        <svg width="132" height="110" viewBox="0 0 132 110" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <g id="Arrow 2">
+            <g id="Group 39866">
+              <path id="Vector 210"
+                d="M14.4214 31.1477C29.658 27.9071 47.7195 27.8187 60.6641 37.7909C68.9365 44.1639 73.0141 56.6107 69.4966 66.4762C66.1747 75.7934 58.8943 83.8281 48.4247 83.2114C42.9676 82.89 38.3458 80.2134 37.5515 74.4271C36.3381 65.5868 45.4205 56.7982 52.5232 53.2181C74.6895 42.0455 105.437 43.7792 125.676 58.346"
+                stroke="#2F80ED" stroke-width="3.3631" stroke-linecap="round" />
+              <path id="Vector 219" d="M117.105 41.7957C119.517 45.4255 124.764 53.8801 126.463 58.6605"
+                stroke="#2F80ED" stroke-width="3.3631" stroke-linecap="round" />
+              <path id="Vector 220" d="M126.469 58.6653C122.131 59.0849 112.261 60.3487 107.481 62.0472"
+                stroke="#2F80ED" stroke-width="3.3631" stroke-linecap="round" />
+            </g>
+          </g>
+        </svg>
+      </div>
+
+
+
+      <!-- Right Section with Form -->
+      <div class="col-lg-4 order-1 order-lg-2" data-aos="zoom-out">
+        <div class="right-content">
+          <div class="card">
+            <h4>Start Learning Today</h4>
+            <form id="submit-to-google-sheet">
+              <div class="form-group">
+                <input class="form-control" type="text" name="name" id="name" placeholder="Name" required />
+              </div>
+              <div class="form-group">
+                <input class="form-control" type="text" name="contact_number" id="contact_number"
+                  placeholder="Contact Number" required />
+              </div>
+              <div class="form-group">
+                <select class="form-control" name="courses" id="courses" required>
+                  <option value="" disabled selected hidden>Select a course</option>
+                  <option value="Investment Banking">Investment Banking & Financial Analyst</option>
+                  <option value="FP&A">Financial Planning & Analysis (FP&A)</option>
+                  <option value="Equity Research">Financial Modelling & Equity Research</option>
+                  <option value="Short Term Analyst">Short Term Financial Analyst</option>
+                  <option value="1 Year Analyst">Financial Analyst (1 Year)</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <input class="form-control" type="text" name="city" id="city" placeholder="City" required />
+              </div>
+              <button type="submit" class="btn btn-primary btn-block">Submit</button>
+            </form>
+          </div>
+        </div>
+      </div>
+      </div>
+    </section>
+  </main>
+
+
+   <!-- Clients Section -->
+<section id="client-section" class="clients section">
+  <div class="client-container flex-vertical">
+    <div class="flex-horizontal">
+      <!-- <div class="spacer-60"></div> -->
+      <div class="flex-vertical">
+        <div class="marquee-horizontal-large">
+          <div class="marquee-cover-horizontal"></div>
+          <div class="track-horizontal">
+            <div class="flex-horizontal">
+              <div class="icon-container-alt">
+                <img src="https://i.ibb.co/mC0bqFw/MITCON.png" alt="" class="icon" />
+              </div>
+              <div class="spacer-30"></div>
+              <div class="icon-container-alt">
+                <img src="https://i.ibb.co/SNr8Fx3/NEXDIGM.jpg" alt="" class="icon" />
+              </div>
+              <div class="spacer-30"></div>
+              <div class="icon-container-alt">
+                <img src="https://i.ibb.co/tzs1xsy/nls-lg-nlsiq-rgb-pos.png" alt="" class="icon" />
+              </div>
+              <div class="spacer-30"></div>
+              <div class="icon-container-alt">
+                <img src="https://i.ibb.co/2nS2631/Northern-Trust-Logo-wine.png" alt="" class="icon" />
+              </div>
+              <div class="spacer-30"></div>
+              <div class="icon-container-alt">
+                <img src="https://i.ibb.co/FsQS3b3/Pda-logo.png" alt="" class="icon" />
+              </div>
+              <div class="icon-container-alt">
+                <img src="https://i.ibb.co/2Z72j4M/2560px-Genpact-logo-svg.png" alt="" class="icon" />
+              </div>
+              <div class="spacer-30"></div>
+              <div class="icon-container-alt">
+                <img src="https://i.ibb.co/Gn76C2j/2560px-J-P-Morgan-Logo-2008-1-svg.png" alt="" class="icon" />
+              </div>
+              <div class="spacer-30"></div>
+              <div class="icon-container-alt">
+                <img src="https://i.ibb.co/YtxNfnR/2560px-Moody-s-Analytics-logo-svg.png" alt="" class="icon" />
+              </div>
+
+              <div class="spacer-30"></div>
+
+              <div class="icon-container-alt">
+                <img src="https://i.ibb.co/LvtrdL1/Accenture-logo.png" alt="" class="icon" />
+              </div>
+
+              <div class="spacer-30"></div>
+
+              <div class="icon-container-alt">
+                <img src="https://i.ibb.co/BGPYDCP/Akzo-Nobel-Logo-svg.png" alt="" class="icon" />
+              </div>
+
+              <div class="spacer-30"></div>
+
+              <div class="icon-container-alt">
+                <img src="https://i.ibb.co/fNHp3b4/Barclays.png" alt="" class="icon" />
+              </div>
+
+              <div class="icon-container-alt">
+                <img src="https://i.ibb.co/wdJBqJy/BMC-logo-svg.png" alt="" class="icon" />
+              </div>
+
+              <div class="icon-container-alt">
+                <img src="https://i.ibb.co/ZNT0K7x/Bn-Y-MELLON.png" alt="" class="icon" />
+              </div>
+              <div class="spacer-30"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</section> 
+  
+
+  <!-- About Section -->
+  <section id="about-us" class="about-us section">
+    
+    <!-- Section Title -->
+    <div class="container section-title" data-aos="fade-up">
+      
+      <h2>Why FINXL</h2>
+      <p><span>Best learning And</span> <span class="description-title">Placement support for your career</span></p>
+    </div><!-- End Section Title -->
+    <div class="content1" id="why-finxl">
+      <div class="winfo">
+        <!-- <h1>Why<span class="movie-night">FINXL</span></h1>
+        <p>
+          Best learning and placement support for your career
+        </p> -->
+        <h2>Step into the world of holistic Upskilling</h2>
+        <p>
+          🤩 Get an Overview of the Platform
+        </p>
+        <div class="content1">
+          <ul>
+            <li class="content-item" data-card="card1">▶️ The Portal Tour</li>
+            <li class="content-item" data-card="card2">💻 Live Learning Sessions</li>
+            <li class="content-item" data-card="card3">📚 Personalized Learning</li>
+            <li class="content-item" data-card="card4">📊 Career Guidance</li>
+            <li class="content-item" data-card="card5">📈 Placement Support</li>
+            <li class="content-item" data-card="card6">🛠️ Hands-On Projects</li>
+            <li class="content-item" data-card="card7">⚡ Quick Doubt Solving</li>
+            <li class="content-item" data-card="card8">📅 Weekly Challenging Contests</li>
+          </ul>
+        </div>
+        <a href="tel:+91915 888 2688" class="btnn">Call Us</a>
+      </div>
+      <div class="swiper">
+        <div class="swiper-wrapper">
+          <!-- Swiper Slide 1 -->  
+          <div class="swiper-slide" id="card1">
+            <div class="video-container">
+              <img src="./assets/img/why/y3.png" alt="YouTube Thumbnail" class="video-thumbnail" />
+              <div class="play-button-overlay">
+                <span class="play-icon">▶</span>
+              </div>
+              <div class="overlay">
+                <h2>The Portal Tour</h2>
+              </div>
+            </div>
+          </div>
+
+          <!-- Video Modal -->
+          <div class="video-modal" id="videoModal">
+            <div class="modal-content">
+              <span class="close-btnn">&times;</span>
+              <iframe src="" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+            </div>
+          </div>
+          <div class="swiper-slide" id="card2">
+            <img class="img-position" src="./assets/img/Classrooms/WhatsApp Image 2024-07-20 at 11.53.07 AM (2).jpeg"
+              alt="Live Learning Sessions" />
+            <div class="overlay">
+              <h2>Live Learning Sessions</h2>
+            </div>
+          </div>
+
+          <!-- Swiper Slide 2 -->
+          <div class="swiper-slide" id="card3">
+            <img src="./assets/img/why/19197541.jpg" alt="Personalized Learning" />
+            <div class="overlay">
+              <h2>Personalized Learning</h2>
+            </div>
+          </div>
+
+          <!-- Swiper Slide 3 -->
+          <div class="swiper-slide" id="card4">
+            <img src="./assets/img/why/rag-doll-blue-word-career.jpg" alt="Career Guidance" />
+            <div class="overlay">
+              <h2>Career Guidance</h2>
+            </div>
+          </div>
+
+          <!-- Swiper Slide 4 -->
+          <div class="swiper-slide" id="card5">
+            <img src="./assets/img/why/4153553.jpg" alt="Placement Support" />
+            <div class="overlay">
+              <h2>Placement Support</h2>
+            </div>
+          </div>
+
+          <!-- Swiper Slide 5 -->
+          <div class="swiper-slide" id="card6">
+            <img src="./assets/img/why/152396-OURWRT-629.jpg" alt="Hands-On Projects" />
+            <div class="overlay">
+              <h2>Hands-On Projects</h2>
+            </div>
+          </div>
+
+          <!-- Swiper Slide 6 -->
+          <div class="swiper-slide" id="card7">
+            <img class="img-position" src="./assets/img/Classrooms/1.jpeg" alt="Quick Doubt Solving" />
+            <div class="overlay">
+              <h2>Quick Doubt Solving</h2>
+            </div>
+          </div>
+
+          <!-- Swiper Slide 7 -->
+          <div class="swiper-slide" id="card8">
+            <img src="./assets/img/why/3651295.jpg" alt="Weekly Challenging Contests" />
+            <div class="overlay">
+              <h2>Weekly Challenging Contests</h2>
+            </div>
+          </div>
+        </div>
+      </div>
+      <ul class="wcircles">
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+      </ul>
+    </div>
+  </section>
+  <!-- partial -->
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/Swiper/8.4.5/swiper-bundle.min.js'></script>
+  <!-- about end -->
+
+  <!-- Course Features Section -->
+
+<section id="course-features" class="course-features section">
+
+
+    <!-- Section Title -->
+    <div class="container section-title" data-aos="fade-up">
+      <h2>Features</h2>
+      <p><span>Course</span> <span class="description-title">Features</span></p>
+    </div><!-- End Section Title -->
+  <div class="wrapper">
+    <div class="cols">
+        <div class="col" ontouchstart="this.classList.toggle('hover');">
+          <div class="container">
+            <div class="front" style="background-image: url(https://th.bing.com/th/id/OIP.QwsabBZQYfMYgsbnqDY6VQHaGB?w=216&h=180&c=7&r=0&o=5&dpr=1.3&pid=1.7)">
+              <div class="inner">
+                <p><i class="bi bi-headset"></i></p>
+                <span>Expert Support</span>
+              </div>
+            </div>
+            <div class="back">
+              <div class="inner">
+                <p>Online support from our team for all your queries based on ticket-based tracking systems.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col" ontouchstart="this.classList.toggle('hover');">
+          <div class="container">
+            <div class="front" style="background-image: url(https://th.bing.com/th/id/R.8b94315a66f1d8130cbfb55bfadf4249?rik=hTRybIgJLIji7w&riu=http%3a%2f%2frapidlearningcenter.com%2fimages%2fimg_certificate.jpg&ehk=rAb6%2frpiPkG8zcsDju3GfNn%2blHOcGU3x3RnOgDNkszs%3d&risl=&pid=ImgRaw&r=0)">
+              <div class="inner">
+                <p><i class="bi bi-card-heading"></i></p>
+                <span>Certification</span>
+              </div>
+            </div>
+            <div class="back">
+              <div class="inner">
+                <p>Get 3 certifications in one course: financial modeling, equity research, and advanced Excel. You can show
+                  them separately in your resume.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col" ontouchstart="this.classList.toggle('hover');">
+          <div class="container">
+            <div class="front" style="background-image: url(https://i.pinimg.com/originals/09/0f/72/090f72f8432b338d9e46b64408625c47.jpg)">
+              <div class="inner">
+                <p><i class="bi bi-journal-richtext"></i></p>
+                <span>Real Time Case Studies</span>
+              </div>
+            </div>
+            <div class="back">
+              <div class="inner">
+                <p>Live case studies for each financial topic to ensure that learners can understand it thoroughly.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col" ontouchstart="this.classList.toggle('hover');">
+          <div class="container">
+            <div class="front" style="background-image: url(https://thumbs.dreamstime.com/b/businessman-d-people-man-person-word-plan-31250757.jpg)">
+              <div class="inner">
+                <p><i class="bi bi-easel"></i></p>
+                <span>Resume Preparation</span>
+              </div>
+            </div>
+            <div class="back">
+              <div class="inner">
+                <p>Our expert will assist you in resume building and job portal updating.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col" ontouchstart="this.classList.toggle('hover');">
+          <div class="container">
+            <div class="front" style="background-image: url(https://th.bing.com/th/id/OIP.IhIhZRfXI6wAEu9Dn6n9wQAAAA?pid=ImgDet&w=184&h=245&c=7&dpr=1.3)">
+              <div class="inner">
+                <p><i class="bi bi-filetype-key"></i></p>
+                <span>Lifetime Access</span>
+              </div>
+            </div>
+            <div class="back">
+              <div class="inner">
+                <p>You get lifetime access to the FINXL LMS, which includes videos, Excel spreadsheets, presentations,
+                  ebooks, quizzes, and case studies.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col" ontouchstart="this.classList.toggle('hover');">
+          <div class="container">
+            <div class="front" style="background-image: url(https://thumbs.dreamstime.com/b/d-speaker-podium-small-man-tribune-rostrum-stand-microphones-render-isolated-white-background-debate-press-97679044.jpg)">
+              <div class="inner">
+                <p><i class="bi bi-chat-right-text"></i></p>
+                <span>Forum</span>
+              </div>
+            </div>
+            <div class="back">
+              <div class="inner">
+                <p>Our career square forum is the most dynamic platform to connect with experts across the globe.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+      </div>
+   </div>
+  </section>
+
+  <!-- Course Syllabus Section -->
+  <div class="container-fluid bg-image">
+    <section id="features" class="features section">
+
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Course Content</h2>
+        <p><span>Course</span> <span class="description-title">Syllabus</span></p>
+      </div><!-- End Section Title -->
+
+      <div class="container">
+
+        <div class="row gy-4 align-items-center features-item">
+          <div class="col-md-5 d-flex align-items-center" data-aos="zoom-out" data-aos-delay="100">
+            <img src="assets/img/equityresearch-two.png" class="img-fluid" alt="">
+          </div>
+          <div class="col-md-7" data-aos="fade-up" data-aos-delay="100">
+            <h3>Financial Modelling Equity Research - Short Term Financial Analyst</h3>
+            <p class="fst-italic">
+              Our course is thoughfully designed in such a way that learner gets the Real Time Investment banking &
+              Equity Research
+              exposure. Learner is not necessarily be from finance background, as our course ensures that Basic finance
+              & account
+              concepts are covered in detail with real time examples.
+            </p>
+            <ul>
+              <li><i class="bi bi-check-circle-fill"></i><span>The <b>#1 Course</b> to Land a <b>Job</b> in <b>Research
+                    and Valuation</b>.</span></li>
+              <li><i class="bi bi-check-circle-fill"></i><span>Certified Financial modeling and equity research Course
+                  with <b>100% Placement</b> assistance.</span></li>
+              <li><i class="bi bi-check-circle-fill"></i><span>Gain hands-on, <b>practical experience</b> during
+                  training, similar to <b>a real job</b> within the Equity Research Firms.</span></li>
+              <li><i class="bi bi-check-circle-fill"></i><span>Build <b>financial models from scratch</b> of your chosen
+                  Listed/Private companies.</span></li>
+              <li><i class="bi bi-check-circle-fill"></i><span>Dedicated <b>Placement Manager</b> with 1-on-1
+                  mentorship.</span></li>
+              <li><i class="bi bi-check-circle-fill"></i><span><b>80%</b> of the <b>Real-time industry used Case
+                    study</b>-based learning.</span></li>
+              <li><i class="bi bi-check-circle-fill"></i>
+                <span>To Learn More About the Course <i class="bi bi-hand-index-thumb rotate-icon"></i>
+                  <a href="https://financial-modelling-equity-research.netlify.app/" target="_blank" class="btn-custom">Click
+                    Here</a></span>
+              </li>
+            </ul>
+          </div>
+        </div><!-- Features Item -->
+      </div>
+    </section><!-- /Features Section -->
+  </div>
+
+
+  <!-- Featured Services Section -->
+  <section id="featured-services" class="featured-services section">
+
+    <!-- Section Title -->
+    <div class="container section-title" data-aos="fade-up">
+      <h2>Featured Services</h2>
+      <p><span>Check Our </span> <span class="description-title">Courses</span></p>
+    </div><!-- End Section Title -->
+
+    <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+      <div class="row gy-5">
+
+        <div class="col-xl-4 col-md-6" data-aos="zoom-in" data-aos-delay="200">
+          <div class="service-item">
+            <div class="img">
+              <img src="https://www.econlib.org/wp-content/uploads/2023/06/financial-analyst.jpg" class="img-fluid"
+                alt="">
+            </div>
+            <div class="details position-relative">
+              <div class="icon">
+                <i class="bi bi-activity"></i>
+              </div>
+              <a href="https://investment-banking-financial-analyst.netlify.app/" class="stretched-link" target="_blank">
+                <h3>Investment Banking and Financial Analyst</h3>
+              </a>
+              <!-- <p>Master the skills of Investment Banking and Financial Analysis with our industry-focused course,
+                  designed to
+                  kickstart your career with hands-on training, placement assistance.</p> -->
+            </div>
+          </div>
+        </div><!-- End Service Item -->
+
+        <div class="col-xl-4 col-md-6" data-aos="zoom-in" data-aos-delay="300">
+          <div class="service-item">
+            <div class="img">
+              <img src="/assets/img/why/3651295.jpg"
+                class="img-fluid" alt="">
+            </div>
+            <div class="details position-relative">
+              <div class="icon">
+                <i class="bi bi-broadcast"></i>
+              </div>
+              <a href="https://financial-planning-and-analysis.netlify.app/" class="stretched-link" target="_blank">
+                <h3>Financial Planning and Analysis (FP&A)</h3>
+              </a>
+              <!-- <p>Advance your career with our Financial Planning and Analysis (FP&A) course, offering practical
+                  insights and tools to drive strategic decision-making and business performance.</p> -->
+            </div>
+          </div>
+        </div><!-- End Service Item -->
+
+        <div class="col-xl-4 col-md-6" data-aos="zoom-in" data-aos-delay="400">
+          <div class="service-item">
+            <div class="img">
+              <img
+                src="https://img.freepik.com/premium-photo/investment-finance-chartstock-market-business_148840-39073.jpg"
+                class="img-fluid" alt="">
+            </div>
+            <div class="details position-relative">
+              <div class="icon">
+                <i class="bi bi-easel"></i>
+              </div>
+              <a href="https://financial-modelling-equity-research.netlify.app/" class="stretched-link" target="_blank">
+                <h3>Financial Modelling Equity Research </h3>
+              </a>
+              <!-- <p>Learn to build comprehensive financial models and perform in-depth equity
+                  research with our hands-on, industry-aligned Financial Modelling and Equity Research course.</p> -->
+            </div>
+          </div>
+        </div><!-- End Service Item -->
+
+        <div class="col-xl-4 col-md-6" data-aos="zoom-in" data-aos-delay="500">
+          <div class="service-item">
+            <div class="img">
+              <img src="https://solarmentors.com/wp-content/uploads/2020/11/why-solar-lights-1.jpg" class="img-fluid"
+                alt="">
+            </div>
+            <div class="details position-relative">
+              <div class="icon">
+                <i class="bi bi-bounding-box-circles"></i>
+              </div>
+              <a href="https://startup-valuation.netlify.app/" class="stretched-link" target="_blank">
+                <h3>Startup Valuation</h3>
+              </a>
+              <!-- <p>Discover the art of Startup Valuation with our course, equipping you to analyze and value
+                  emerging businesses using industry-best practices and real-world scenarios.</p> -->
+            </div>
+          </div>
+        </div><!-- End Service Item -->
+
+        <div class="col-xl-4 col-md-6" data-aos="zoom-in" data-aos-delay="600">
+          <div class="service-item">
+            <div class="img">
+              <img src="https://elearning.mindcypress.com/s/store/courses/641d478de4b0608e1b4b8b75/cover.jpg?v=1"
+                class="img-fluid" alt="">
+            </div>
+            <div class="details position-relative">
+              <div class="icon">
+                <i class="bi bi-calendar4-week"></i>
+              </div>
+              <a href="https://finxl-mirosoft-power-bi.netlify.app/" class="stretched-link" target="_blank">
+                <h3>Microsoft Power BI</h3>
+              </a>
+              <!-- <p>Unlock the power of data visualization with our Microsoft Power BI course, designed to help you
+                  create
+                  interactive reports and dashboards for informed business decision-making.</p> -->
+            </div>
+          </div>
+        </div><!-- End Service Item -->
+
+        <div class="col-xl-4 col-md-6" data-aos="zoom-in" data-aos-delay="700">
+          <div class="service-item">
+            <div class="img">
+              <img
+                src="https://www.investopedia.com/thmb/Fy4ARBRSqhMDc8480Yt0ZBPc3PU=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/StrongBuyWhatitisHowitWorksWhentouseit-26b4245a21af454896e504a916f8bfc0.jpg"
+                class="img-fluid" alt="">
+            </div>
+            <div class="details position-relative">
+              <div class="icon">
+                <i class="bi bi-chat-square-text"></i>
+              </div>
+              <a href="https://financial-analyst-1-year.netlify.app/" class="stretched-link" target="_blank">
+                <h3>Financial Analyst One Year</h3>
+              </a>
+              <!-- <p>Kickstart your career as a Financial Analyst with our comprehensive one-year course, providing
+                  in-depth
+                  knowledge and hands-on experience in financial analysis, modeling.</p> -->
+            </div>
+          </div>
+        </div><!-- End Service Item -->
+
+      </div>
+
+    </div>
+
+  </section><!-- /Featured Services Section -->
+
+  
+
+
+  <!-- Placed students -->
+<section id="placed-students" class="placed-students section">
+
+  <!-- Section Title -->
+  <div class="container section-title" data-aos="fade-up">
+    <h2>Testimonials</h2>
+    <p><span>From Aspirations to Achievements:</span> <span class="description-title">Real Voices of Success</span></p>
+  </div><!-- End Section Title -->
+
+  <div class="alumni-wrapper">
+    <div class="alumni-marquee-container">
+      <!-- Card 1 -->
+      <div class="alumni-card">
+        <div class="alumni-image"
+          style="background-image: url('./assets/img/placement pics/sharvaris-FINXL.IN.webp');">
+        </div>
+        <div class="top-container">
+          <span class="name">Sharvari Shirgire</span>
+          <img class="linkedin-icon" src="./assets/img/logo-linkedin-icon-2048.png" alt="LinkedIn Icon">
+        </div>
+        <div class="bottom-container">
+          <img src="./assets/img/arrow.right.svg" class="arrow-right" alt="arrow-right">
+          <div class="company-container">
+            <img src="./assets/img/COMP/Capgemini_201x_logo.svg.png" class="company-logo">
+            <div class="right">
+            </div>
+          </div>
+          <div class="designation">Financial Analyst</div>
+        </div>
+      </div>
+
+      <div class="alumni-card">
+        <div class="alumni-image"
+          style="background-image: url('./assets/img/placement pics/KetanKolhapur-FINXL.IN.webp');"></div>
+        <div class="top-container">
+          <span class="name">Ketan Kolhapure</span>
+          <img class="linkedin-icon" src="./assets/img/logo-linkedin-icon-2048.png" alt="LinkedIn Icon">
+        </div>
+        <div class="bottom-container">
+          <img src="./assets/img/arrow.right.svg" class="arrow-right" alt="arrow-right">
+          <div class="company-container">
+            <img src="./assets/img/COMP/Accenture-logo.png" class="company-logo">
+            <div class="right">
+            </div>
+          </div>
+          <div class="designation">Sr Analyst</div>
+        </div>
+      </div>
+
+
+
+      <div class="alumni-card">
+        <div class="alumni-image"
+          style="background-image: url('./assets/img/placement pics/AnjaliSingh-FINXL.IN.webp');"></div>
+        <div class="top-container">
+          <span class="name">Anjali Singh</span>
+          <img class="linkedin-icon" src="./assets/img/logo-linkedin-icon-2048.png" alt="LinkedIn Icon">
+        </div>
+        <div class="bottom-container">
+          <img src="./assets/img/arrow.right.svg" class="arrow-right" alt="arrow-right">
+          <div class="company-container">
+            <img src="./assets/img/COMP/Infosys_logo.png" class="company-logo">
+            <div class="right">
+            </div>
+          </div>
+          <div class="designation">FP & A</div>
+        </div>
+      </div>
+  
+      <div class="alumni-card">
+        <div class="alumni-image"
+          style="background-image: url('./assets/img/placement pics/Nakul\ Sadhu-FINXL.IN.webp');">
+        </div>
+        <div class="top-container">
+          <span class="name">Nakul Sadhu</span>
+          <img class="linkedin-icon" src="./assets/img/logo-linkedin-icon-2048.png" alt="LinkedIn Icon">
+        </div>
+        <div class="bottom-container">
+          <img src="./assets/img/arrow.right.svg" class="arrow-right" alt="arrow-right">
+          <div class="company-container">
+            <img src="./assets/img/COMP/Capgemini_201x_logo.svg.png" class="company-logo">
+            <div class="right">
+            </div>
+          </div>
+          <div class="designation">FP & A</div>
+        </div>
+      </div>
+
+
+      <div class="alumni-card">
+        <div class="alumni-image"
+          style="background-image: url('./assets/img/placement pics/umangrabadi-FINXL.IN.webp');"></div>
+        <div class="top-container">
+          <span class="name">Umang Rabadia</span>
+          <img class="linkedin-icon" src="./assets/img/logo-linkedin-icon-2048.png" alt="LinkedIn Icon">
+        </div>
+        <div class="bottom-container">
+          <img src="./assets/img/arrow.right.svg" class="arrow-right" alt="arrow-right">
+          <div class="company-container">
+            <img src="./assets/img/COMP/Infosys_logo.png" class="company-logo">
+            <div class="right">
+            </div>
+          </div>
+          <div class="designation">Consultant FSA</div>
+        </div>
+      </div>
+      <div class="alumni-card">
+        <div class="alumni-image"
+          style="background-image: url('./assets/img/placement pics/NIKHILDESAI-FINXL.IN.webp');"></div>
+        <div class="top-container">
+          <span class="name">Nikhil Desai</span>
+          <img class="linkedin-icon" src="./assets/img/logo-linkedin-icon-2048.png" alt="LinkedIn Icon">
+        </div>
+        <div class="bottom-container">
+          <img src="./assets/img/arrow.right.svg" class="arrow-right" alt="arrow-right">
+          <div class="company-container">
+            <img src="./assets/img/COMP/Moodys-Analytics_.png" class="company-logo">
+            <div class="right">
+            </div>
+          </div>
+          <div class="designation">Sr Analyst</div>
+        </div>
+      </div>
+
+
+
+      <div class="alumni-card">
+        <div class="alumni-image"
+          style="background-image: url('./assets/img/placement pics/Gayatri\ Khole-FINXL.IN.webp');"></div>
+        <div class="top-container">
+          <span class="name">Gayatri Khole</span>
+          <img class="linkedin-icon" src="./assets/img/logo-linkedin-icon-2048.png" alt="LinkedIn Icon">
+        </div>
+        <div class="bottom-container">
+          <img src="./assets/img/arrow.right.svg" class="arrow-right" alt="arrow-right">
+          <div class="company-container">
+            <img src="./assets/img/COMP/Tech_Mahindra logo.png" class="company-logo">
+            <div class="right">
+            </div>
+          </div>
+          <div class="designation">Sr Analyst</div>
+        </div>
+      </div>
+
+
+
+      <div class="alumni-card">
+        <div class="alumni-image"
+          style="background-image: url('./assets/img/placement pics/MayurKharde-FINXL.IN.webp');">
+        </div>
+        <div class="top-container">
+          <span class="name">Mayur Kharde</span>
+          <img class="linkedin-icon" src="./assets/img/logo-linkedin-icon-2048.png" alt="LinkedIn Icon">
+        </div>
+        <div class="bottom-container">
+          <img src="./assets/img/arrow.right.svg" class="arrow-right" alt="arrow-right">
+          <div class="company-container">
+            <img src="./assets/img/COMP/Northern trust.png" class="company-logo">
+            <div class="right">
+            </div>
+          </div>
+          <div class="designation">Financial Analyst</div>
+        </div>
+      </div>
+
+
+      <div class="alumni-card">
+        <div class="alumni-image"
+          style="background-image: url('./assets/img/placement pics/monikat-FINXL.IN.webp');"></div>
+        <div class="top-container">
+          <span class="name">Monika Thakwani</span>
+          <img class="linkedin-icon" src="./assets/img/logo-linkedin-icon-2048.png" alt="LinkedIn Icon">
+        </div>
+        <div class="bottom-container">
+          <img src="./assets/img/arrow.right.svg" class="arrow-right" alt="arrow-right">
+          <div class="company-container">
+            <img src="./assets/img/COMP/hitachi-logo.png" class="company-logo">
+            <div class="right">
+              <!-- <span class="company-name">Ketto</span>
+                        <span class="currently-text">Currently, Intern</span> -->
+            </div>
+          </div>
+          <div class="designation">Sr. FA</div>
+        </div>
+      </div>
+
+
+
+      <div class="alumni-card">
+        <div class="alumni-image"
+          style="background-image: url('./assets/img/placement pics/ATHARVAMANAL-FINXL.IN.webp');"></div>
+        <div class="top-container">
+          <span class="name">Atharv Manal</span>
+          <img class="linkedin-icon" src="./assets/img/logo-linkedin-icon-2048.png" alt="LinkedIn Icon">
+        </div>
+        <div class="bottom-container">
+          <img src="./assets/img/arrow.right.svg" class="arrow-right" alt="arrow-right">
+          <div class="company-container">
+            <img src="./assets/img/COMP/Accenture-logo.png" class="company-logo">
+            <div class="right">
+              <!-- <span class="company-name">Ketto</span>
+                        <span class="currently-text">Currently, Intern</span> -->
+            </div>
+          </div>
+          <div class="designation">Financial Analyst</div>
+        </div>
+      </div>
+      <div class="alumni-card">
+        <div class="alumni-image"
+          style="background-image: url('./assets/img/placement pics/Manan\ Shah\ KPMG-FINXL.IN.webp');"></div>
+        <div class="top-container">
+          <span class="name">Manan Shah</span>
+          <img class="linkedin-icon" src="./assets/img/logo-linkedin-icon-2048.png" alt="LinkedIn Icon">
+        </div>
+        <div class="bottom-container">
+          <img src="./assets/img/arrow.right.svg" class="arrow-right" alt="arrow-right">
+          <div class="company-container">
+            <img src="./assets/img/COMP/2560px-KPMG_logo.svg.png" class="company-logo">
+            <div class="right">
+              <!-- <span class="company-name">Ketto</span>
+                        <span class="currently-text">Currently, Intern</span> -->
+            </div>
+          </div>
+          <div class="designation">Analyst</div>
+        </div>
+      </div>
+
+      <div class="alumni-card">
+        <div class="alumni-image"
+          style="background-image: url('./assets/img/placement pics/Shraddha-FINXL.IN.webp');"></div>
+        <div class="top-container">
+          <span class="name">Shraddha Patil</span>
+          <img class="linkedin-icon" src="./assets/img/logo-linkedin-icon-2048.png" alt="LinkedIn Icon">
+        </div>
+        <div class="bottom-container">
+          <img src="./assets/img/arrow.right.svg" class="arrow-right" alt="arrow-right">
+          <div class="company-container">
+            <img src="./assets/img/COMP/Tech_Mahindra logo.png" class="company-logo">
+            <div class="right">
+              <!-- <span class="company-name">Ketto</span>
+                        <span class="currently-text">Currently, Intern</span> -->
+            </div>
+          </div>
+          <div class="designation">Sr Analyst</div>
+        </div>
+      </div>
+
+      <div class="alumni-card">
+        <div class="alumni-image"
+          style="background-image: url('./assets/img/placement pics/swapnils-FINXL.IN.webp');"></div>
+        <div class="top-container">
+          <span class="name">Swapnil Shedge</span>
+          <img class="linkedin-icon" src="./assets/img/logo-linkedin-icon-2048.png" alt="LinkedIn Icon">
+        </div>
+        <div class="bottom-container">
+          <img src="./assets/img/arrow.right.svg" class="arrow-right" alt="arrow-right">
+          <div class="company-container">
+            <img src="./assets/img/COMP/Northern trust.png" class="company-logo">
+            <div class="right">
+              <!-- <span class="company-name">Ketto</span>
+                        <span class="currently-text">Currently, Intern</span> -->
+            </div>
+          </div>
+          <div class="designation">Financial Analyst</div>
+        </div>
+      </div>
+
+      <div class="alumni-card">
+        <div class="alumni-image"
+          style="background-image: url('./assets/img/placement pics/SHIVANIJAGDALE-FINXL.IN.webp');"></div>
+        <div class="top-container">
+          <span class="name">Shivani Jagdale</span>
+          <img class="linkedin-icon" src="./assets/img/logo-linkedin-icon-2048.png" alt="LinkedIn Icon">
+        </div>
+        <div class="bottom-container">
+          <img src="./assets/img/arrow.right.svg" class="arrow-right" alt="arrow-right">
+          <div class="company-container">
+            <img src="./assets/img/COMP/TCS_NewLogo.png" class="company-logo">
+            <div class="right">
+              <!-- <span class="company-name">Ketto</span>
+                        <span class="currently-text">Currently, Intern</span> -->
+            </div>
+          </div>
+          <div class="designation">Associate</div>
+        </div>
+      </div>
+
+      <div class="alumni-card">
+        <div class="alumni-image"
+          style="background-image: url('./assets/img/placement pics/Falguni\ Malviya-FINXL.IN.webp');"></div>
+        <div class="top-container">
+          <span class="name">Falguni Malviya</span>
+          <img class="linkedin-icon" src="./assets/img/logo-linkedin-icon-2048.png" alt="LinkedIn Icon">
+        </div>
+        <div class="bottom-container">
+          <img src="./assets/img/arrow.right.svg" class="arrow-right" alt="arrow-right">
+          <div class="company-container">
+            <img src="./assets/img/COMP/1280px-Deloitte.svg.png" class="company-logo">
+            <div class="right">
+              <!-- <span class="company-name">Ketto</span>
+                        <span class="currently-text">Currently, Intern</span> -->
+            </div>
+          </div>
+          <div class="designation">Consultant AM</div>
+        </div>
+      </div>
+      <div class="alumni-card">
+        <div class="alumni-image"
+          style="background-image: url('./assets/img/placement pics/Himanshu\ Patel-FINXL.IN.webp');"></div>
+        <div class="top-container">
+          <span class="name">Himanshu Patel</span>
+          <img class="linkedin-icon" src="./assets/img/logo-linkedin-icon-2048.png" alt="LinkedIn Icon">
+        </div>
+        <div class="bottom-container">
+          <img src="./assets/img/arrow.right.svg" class="arrow-right" alt="arrow-right">
+          <div class="company-container">
+            <img src="./assets/img/COMP/UPL logo.png" class="company-logo">
+            <div class="right">
+              <!-- <span class="company-name">Ketto</span>
+                        <span class="currently-text">Currently, Intern</span> -->
+            </div>
+          </div>
+          <div class="designation">FP&A Analyst</div>
+        </div>
+      </div>
+    
+      <div class="alumni-card">
+        <div class="alumni-image"
+          style="background-image: url('./assets/img/placement pics/ChinmayKumar-FINXL.IN.webp');"></div>
+        <div class="top-container">
+          <span class="name">Chinmay Kumar</span>
+          <img class="linkedin-icon" src="./assets/img/logo-linkedin-icon-2048.png" alt="LinkedIn Icon">
+        </div>
+        <div class="bottom-container">
+          <img src="./assets/img/arrow.right.svg" class="arrow-right" alt="arrow-right">
+          <div class="company-container">
+            <img src="./assets/img/COMP/Accenture-logo.png" class="company-logo">
+            <div class="right">
+              <!-- <span class="company-name">Ketto</span>
+                        <span class="currently-text">Currently, Intern</span> -->
+            </div>
+          </div>
+          <div class="designation">Financial Analyst</div>
+        </div>
+      </div>
+    
+      <!-- Add more cards as needed -->
+    </div>
+  </div>
+</section>
+
+
+<section id="testimonials" class="testimonials section">
+  <main>
+
+    <div class="slider">
+  
+      <div class="buttons">
+        <div class="previous"></div>
+        <div class="next"></div>
+      </div>
+  
+      <div class="slide">
+        <div class="testimonial">
+          <blockquote>“It was a wonderful experience with Finxl. Finxl gave me a good knowledge of Financial analysis and also taught me how to implement it in various scenarios.
+            Along with the hands on experience on FP&A projects they provided me with a great Career direction. I am really happy being a FP&A certified by Finxl.
+            Also trainer helped in Resume building, Solutions to interview questions, placement assistance. I'm really satisfied with the outcome.”</blockquote>
+          <p class="author">Tejas Disale
+            <span>Sr FP&A, United Bank of Switzerland (UBS), Pune</span>
+          </p>
+        </div>
+  
+        <div class="slider-img">
+          <img src="./assets/img/placement pics/Tejas Disale-FINXL.IN.webp" alt="Author Image">
+        </div>
+  
+      </div>
+  
+      <div class="slide">
+        <div class="testimonial">
+          <blockquote>“Finxl is an institute which groomed my overall knowledge into practical. Its gave me chance to understand real 
+            time data which any company would want in a candidate. I am now placed with Transparent value. Whatever I learnt at Finxl
+             helped me to get placed in Transparent value and now its most useful at job in my company. 
+             I would like to give credit to Akhilesh sir for personal attention at every level from day1 to final selection in the company.
+              I had attempted Transparent value couple of years back just after completion of my MBA and dreamed to be part of TV. 
+              Its wonderful experience to convert dream into reality.”</blockquote>
+          <p class="author">Simran Khanna Shukla
+            <span>Financial Analyst, Transparent Value, Mumbai</span>
+          </p>
+        </div>
+  
+        <div class="slider-img">
+          <img src="./assets/img/placement pics/SimranKhannaShukla-FINXL.IN.webp" alt="Author Image">
+        </div>
+  
+      </div>
+
+      <div class="slide">
+        <div class="testimonial">
+          <blockquote>“It was an immense pleasure learning with Finxl. I have learned so many great things about financial modelling 
+            &amp; Equity Research. As I came from the non-finance background (Engineering), this course helped me to learn the
+             financial concepts in detail from scratch. Under your guidance, I have learned to build financial models from scratch. 
+            FINXL's FMER course helped me guide my future endeavors.
+            Thanks for your help and support Mr.Akhilesh Sir.”</blockquote>
+          <p class="author">Snehesh K.
+            <span>Pricing Analyst, Capgemini</span>
+          </p>
+        </div>
+  
+        <div class="slider-img">
+          <img src="./assets/img/placement pics/SNEHESH-FINXL.IN.webp" alt="Author Image">
+        </div>
+  
+      </div>
+
+      <div class="slide">
+        <div class="testimonial">
+          <blockquote>“I was BCom fresher from Buldhana. I had no idea where to start my career as a fresher in Pune. I was looking 
+            for a course that would teach me the skills I need to get a job in finance. I found Finxl and I am so glad I did 
+            financial modeling equity research course online live. The course was taught by Akhilesh Sir, who is an expert in 
+            financial modeling, forecasting, analysis, business model understanding, and valuation. He is a great teacher and he 
+            made the course very interesting & easy. He also made sure that we understood the concepts by giving us practical
+             training.”</blockquote>
+          <p class="author">Mayur Sarolkar
+            <span>Sr. Finance Associate, Dubai</span>
+          </p>
+        </div>
+  
+        <div class="slider-img">
+          <img src="./assets/img/placement pics/MAYURSAROLKA-FINXL.IN.webp" alt="Author Image">
+        </div>
+  
+      </div>
+
+      <div class="slide">
+        <div class="testimonial">
+          <blockquote>“Before joining Finxl I was not at all good in Excel and all that. I was working in the accounting 
+            department of one furniture company. But i was interested i core finance analyst job profile since my MBA from pune 
+            university. I learn financial modeling, forecasting, ratio analysis, stock valuation method dcf, relative valuation, 
+            sensitivity analysis, report writing from akhilesh sir. I got placement as equity research 
+            analyst in pune location. thank you thank you akhilesh sir for technical & mock interview preparation and thank you 
+            akanksha madam for the placement help.”</blockquote>
+          <p class="author">Aniket Dhumal
+            <span>Equity Research Analyst - Valued Solution</span>
+          </p>
+        </div>
+  
+        <div class="slider-img">
+          <img src="./assets/img/placement pics/ANIKETDHUMAL-FINXL.IN.webp" alt="Author Image">
+        </div>
+  
+      </div>
+
+      <div class="slide">
+        <div class="testimonial">
+          <blockquote>“ It was a wonderful experience with FINXL. It gave in depth knowledge and showed how to implement it in various 
+            scenarios. I am very thankful to Akhilesh Sir. Highly recommended if you want to shift your career to Finance Field. 
+            Akhilesh sir also provides support and guidance for placement.”</blockquote>
+          <p class="author">Falguni Malviya
+            <span>Consultant AM, Deloitte</span>
+          </p>
+        </div>
+  
+        <div class="slider-img">
+          <img src="./assets/img/placement pics/Falguni Malviya-FINXL.IN.webp" alt="Author Image">
+        </div>
+  
+      </div>
+
+      <div class="slide">
+        <div class="testimonial">
+          <blockquote>“Before joining FINXL my confidence level was zero, but after completing the session I can proudly say 
+            that I have confidence in myself that I can definitely do better. This is all because of Akhilesh Sir, his guidance 
+            and the way he is confident enough while teaching us. Thank you for explaining the FP&A concept so clearly. And making 
+            me believe in my self. Now I got placed with TCS & then in Community Brands and would like to all credit to FINXL and 
+            Akhilesh sir.”</blockquote>
+          <p class="author"> Priyanka Ravindra Singh
+            <span>Senior Associate, FP&A, Community Brands, Pune</span>
+          </p>
+        </div>
+  
+        <div class="slider-img">
+          <img src="./assets/img/placement pics/PriyankaRavindraSingh-FINXL.IN.webp" alt="Author Image">
+        </div>
+  
+      </div>
+
+      <div class="slide">
+        <div class="testimonial">
+          <blockquote>“I recently had joined Finxl for financial modeling and Equity research program, and I am delighted to express 
+            my heartfelt gratitude for the exceptional learning experience. The program has left an indelible mark on my understanding
+             of financial modeling and has equipped me with invaluable skills that will undoubtedly propel my career forward.”</blockquote>
+          <p class="author">Akash Kumar
+            <span>Consultant, SG Analytics</span>
+          </p>
+        </div>
+  
+        <div class="slider-img">
+          <img src="./assets/img/placement pics/AKASHKUMAR-FINXL.IN.webp" alt="Author Image">
+        </div>
+  
+      </div>
+
+      <div class="slide">
+        <div class="testimonial">
+          <blockquote>“I am MBA Finance student from Pune University. But no MBA college is giving core finance placement in Pune. 
+            But my this dream job magic happen only with Finxl and Akhilesh sir. I will suggest anyone who want core finance job 
+            please don't wait for college. Join Finxl and get your core finance job. Thank you akhilesh sir for my equity research 
+            analyst job placement.”</blockquote>
+          <p class="author"> Shashank Kadu
+            <span>Equity Research Analyst - Valued Solution</span>
+          </p>
+        </div>
+  
+        <div class="slider-img">
+          <img src="./assets/img/placement pics/Shashank Kadu-FINXL.IN.webp" alt="Author Image">
+        </div>
+  
+      </div>
+
+
+  
+    </div>
+  
+  </main>
+  
+</section>
+
+
+
+
+  
+  <!-- Faq Section -->
+  <div class="container-fluid bg-image">
+    <section class="faq-9 faq section light-background" id="faq">
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Contact Us</h2>
+        <p><span>Ask Your </span> <span class="description-title">Query</span></p>
+      </div><!-- End Section Title -->
+
+      <div class="container">
+        <div class="row">
+
+          <div class="col-lg-5" data-aos="fade-up">
+            <h2 class="faq-title">Have a question? Check out the FAQ</h2>
+            <p class="faq-description"></p>
+            <div class="faq-arrow d-none d-lg-block" data-aos="fade-up" data-aos-delay="200">
+              <svg class="faq-arrow" width="200" height="211" viewBox="0 0 200 211" fill="none"
+                xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M198.804 194.488C189.279 189.596 179.529 185.52 169.407 182.07L169.384 182.049C169.227 181.994 169.07 181.939 168.912 181.884C166.669 181.139 165.906 184.546 167.669 185.615C174.053 189.473 182.761 191.837 189.146 195.695C156.603 195.912 119.781 196.591 91.266 179.049C62.5221 161.368 48.1094 130.695 56.934 98.891C84.5539 98.7247 112.556 84.0176 129.508 62.667C136.396 53.9724 146.193 35.1448 129.773 30.2717C114.292 25.6624 93.7109 41.8875 83.1971 51.3147C70.1109 63.039 59.63 78.433 54.2039 95.0087C52.1221 94.9842 50.0776 94.8683 48.0703 94.6608C30.1803 92.8027 11.2197 83.6338 5.44902 65.1074C-1.88449 41.5699 14.4994 19.0183 27.9202 1.56641C28.6411 0.625793 27.2862 -0.561638 26.5419 0.358501C13.4588 16.4098 -0.221091 34.5242 0.896608 56.5659C1.8218 74.6941 14.221 87.9401 30.4121 94.2058C37.7076 97.0203 45.3454 98.5003 53.0334 98.8449C47.8679 117.532 49.2961 137.487 60.7729 155.283C87.7615 197.081 139.616 201.147 184.786 201.155L174.332 206.827C172.119 208.033 174.345 211.287 176.537 210.105C182.06 207.125 187.582 204.122 193.084 201.144C193.346 201.147 195.161 199.887 195.423 199.868C197.08 198.548 193.084 201.144 195.528 199.81C196.688 199.192 197.846 198.552 199.006 197.935C200.397 197.167 200.007 195.087 198.804 194.488ZM60.8213 88.0427C67.6894 72.648 78.8538 59.1566 92.1207 49.0388C98.8475 43.9065 106.334 39.2953 114.188 36.1439C117.295 34.8947 120.798 33.6609 124.168 33.635C134.365 33.5511 136.354 42.9911 132.638 51.031C120.47 77.4222 86.8639 93.9837 58.0983 94.9666C58.8971 92.6666 59.783 90.3603 60.8213 88.0427Z"
+                  fill="currentColor"></path>
+              </svg>
+              <img src="assets/img/faq-min.png" class="img-fluid" alt="">
+            </div>
+          </div>
+
+          <div class="col-lg-7" data-aos="fade-up" data-aos-delay="300">
+            <div class="faq-container">
+
+              <div class="faq-item faq-active">
+                <h3>What is FINXL?</h3>
+                <div class="faq-content">
+                  <p>FINXL is an online learning platform offering courses in advanced Excel, PowerPoint
+                    presentations, and other professional skill development programs tailored to enhance productivity
+                    and efficiency in the workplace.</p>
+                </div>
+                <i class="faq-toggle bi bi-chevron-right"></i>
+              </div><!-- End Faq item-->
+
+              <div class="faq-item">
+                <h3>How can I enroll in a course?</h3>
+                <div class="faq-content">
+                  <p>You can enroll in any FINXL course by visiting the website www.finxl.in, selecting the desired
+                    course, and completing the payment process.
+                  </p>
+                </div>
+                <i class="faq-toggle bi bi-chevron-right"></i>
+              </div><!-- End Faq item-->
+
+              <div class="faq-item">
+                <h3>Can I access the courses offline?</h3>
+                <div class="faq-content">
+                  <p>No, FINXL courses are accessible online only. You will need an active internet connection to view
+                    course content.</p>
+                </div>
+                <i class="faq-toggle bi bi-chevron-right"></i>
+              </div><!-- End Faq item-->
+
+              <div class="faq-item">
+                <h3> Are FINXL courses suitable for beginners?</h3>
+                <div class="faq-content">
+                  <p>Yes, FINXL offers beginner-friendly courses as well as advanced-level courses. Check the course
+                    description to see which level suits your needs.</p>
+                </div>
+                <i class="faq-toggle bi bi-chevron-right"></i>
+              </div><!-- End Faq item-->
+
+              <div class="faq-item">
+                <h3>How are the courses delivered?</h3>
+                <div class="faq-content">
+                  <p>FINXL courses are delivered online through pre-recorded video lectures, downloadable resources,
+                    and practical assignments.</p>
+                </div>
+                <i class="faq-toggle bi bi-chevron-right"></i>
+              </div><!-- End Faq item-->
+
+              <div class="faq-item">
+                <h3>Can I enroll in multiple courses at the same time?</h3>
+                <div class="faq-content">
+                  <p>Yes, you can enroll in multiple courses simultaneously and access them through your account
+                    dashboard.</p>
+                </div>
+                <i class="faq-toggle bi bi-chevron-right"></i>
+              </div>
+
+              <div class="faq-item">
+                <h3>How do I contact FINXL for additional support?</h3>
+                <div class="faq-content">
+                  <p>You can contact FINXL’s support team by emailing info@finxl.in. They typically respond within
+                    24-48 hours.</p>
+                </div>
+                <i class="faq-toggle bi bi-chevron-right"></i>
+              </div><!-- End Faq item-->
+
+              <div class="faq-item">
+                <h3>Does the certificate have an expiration date?</h3>
+                <div class="faq-content">
+                  <p>No, FINXl Certificates of Completion do not expire. They remain valid as proof of your learning.
+                  </p>
+                </div>
+                <i class="faq-toggle bi bi-chevron-right"></i>
+              </div>
+              <div class="faq-item">
+                <h3>Are there additional fees for obtaining the certificate?</h3>
+                <div class="faq-content">
+                  <p>No, the certificate is included in your course fee. There are no extra charges for downloading it.
+                  </p>
+                </div>
+                <i class="faq-toggle bi bi-chevron-right"></i>
+              </div>
+              <div class="faq-item">
+                <h3> Is the Certification of Completion recognized by employers?</h3>
+                <div class="faq-content">
+                  <p>While our certificates demonstrate your skills and knowledge, recognition varies by employer.
+                    Many learners use them to enhance their resumes, LinkedIn profiles, or professional portfolios.
+                  </p>
+                </div>
+                <i class="faq-toggle bi bi-chevron-right"></i>
+              </div>
+              <div class="faq-item">
+                <h3>Is the Certification of Completion shareable on social media?</h3>
+                <div class="faq-content">
+                  <p>Yes, you can share your certificate on platforms like LinkedIn, Twitter, or Facebook. A shareable
+                    link is provided in your dashboard.
+                  </p>
+                </div>
+                <i class="faq-toggle bi bi-chevron-right"></i>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <!-- Contact Start -->
+  <!-- <section id="contact-us" class="contact section">
+    <div class="container section-title" data-aos="fade-up">
+      <h2>Contact Us</h2>
+      <p><span>Ask Your </span> <span class="description-title">Query</span></p>
+    </div>
+  <div class="container-fluid py-5"> 
+    <div class="container py-5">
+        <div class="row align-items-center">
+            <div class="col-lg-5 mb-5 mb-lg-0">
+                <div class="bg-light d-flex flex-column justify-content-center px-5" style="height: 450px;">
+                    <div class="d-flex align-items-center mb-5">
+                        <div class="btn-icon bg-primary mr-4">
+                            <i class="fa fa-2x fa-map-marker-alt text-white"></i>
+                        </div>
+                        <div class="mt-n1">
+                            <h4>Our Location</h4>
+                            <p class="m-0">123 Street, New York, USA</p>
+                        </div>
+                    </div>
+                    <div class="d-flex align-items-center mb-5">
+                        <div class="btn-icon bg-secondary mr-4">
+                            <i class="fa fa-2x fa-phone-alt text-white"></i>
+                        </div>
+                        <div class="mt-n1">
+                            <h4>Call Us</h4>
+                            <p class="m-0">+012 345 6789</p>
+                        </div>
+                    </div>
+                    <div class="d-flex align-items-center">
+                        <div class="btn-icon bg-warning mr-4">
+                            <i class="fa fa-2x fa-envelope text-white"></i>
+                        </div>
+                        <div class="mt-n1">
+                            <h4>Email Us</h4>
+                            <p class="m-0">info@example.com</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-7">
+                <div class="section-title2 position-relative mb-4">
+                    <h6 class="d-inline-block position-relative text-secondary text-uppercase pb-2">Need Help?</h6>
+                    <h1 class="display-4">Send Us A Message</h1>
+                </div>
+                <div class="contact-form">
+                    <form>
+                        <div class="row">
+                            <div class="col-6 form-group">
+                                <input type="text" class="form-control1 border-top-0 border-right-0 border-left-0 p-0" placeholder="Your Name" required="required">
+                            </div>
+                            <div class="col-6 form-group">
+                                <input type="email" class="form-control1 border-top-0 border-right-0 border-left-0 p-0" placeholder="Your Email" required="required">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <input type="text" class="form-control1 border-top-0 border-right-0 border-left-0 p-0" placeholder="Subject" required="required">
+                        </div>
+                        <div class="form-group">
+                            <textarea class="form-control1 border-top-0 border-right-0 border-left-0 p-0" rows="5" placeholder="Message" required="required"></textarea>
+                        </div>
+                        <div>
+                            <button class="btn btn-primary py-3 px-5" type="submit">Send Message</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+ </section> -->
+
+
+  <footer id="footer" class="footer dark-background">
+
+    <div class="container">
+      <div class="row gy-3">
+        <div class="col-lg-3 col-md-6 d-flex">
+          <i class="bi bi-geo-alt icon"></i>
+          <div class="address">
+            <h4>Address</h4>
+            <p>Pune (MH) India
+              E15, Whispering Winds Commercial Complex, Near Star Bazaar, Baner Pashan Link Road, Baner</p>
+            <p>Pune 411021</p>
+            <p></p>
+          </div>
+
+        </div>
+
+        <div class="col-lg-3 col-md-6 d-flex">
+          <i class="bi bi-telephone icon"></i>
+          <div>
+            <h4>Contact</h4>
+            <p>
+              <strong>Phone:</strong> <span>
+                +91 915-888-2688 <br>
+                +91 845-902-4539 /
+                +91 810-913-0909</span><br>
+              <strong>Email:</strong> <span>info@finxl.in</span><br>
+            </p>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-md-6 d-flex">
+          <i class="bi bi-clock icon"></i>
+          <div>
+            <h4>Opening Hours</h4>
+            <p>
+              <strong>Mon-Sun:</strong> <span>9AM - 11PM</span><br>
+              <strong>All Day</strong>: <span>Open</span>
+            </p>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-md-6">
+          <h4>Follow Us</h4>
+          <div class="social-links d-flex">
+            <a href="https://x.com/IndiaFinxl" class="twitter" target="_blank"><i class="bi bi-twitter-x"></i></a>
+            <a href="https://www.youtube.com/@finxlindia" class="youtube" target="_blank"><i class="bi bi-youtube"></i></a>
+            <a href="https://www.facebook.com/finxl.inc/" class="facebook" target="_blank"><i class="bi bi-facebook"></i></a>
+            <a href="https://www.instagram.com/finxl.corporatefinance/" class="instagram" target="_blank"><i class="bi bi-instagram"></i></a>
+            <a href="https://www.linkedin.com/company/finxl-corporate-finance-institute/posts/?feedView=all"
+              class="linkedin" target="_blank"><i class="bi bi-linkedin"></i></a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <div class="container copyright text-center mt-4">
+      <p>© <span>Copyright</span> <strong class="px-1 sitename"><a href="https://www.finxl.in/">Finxl.in</a></strong>
+        <span>All Rights Reserved</span>
+      </p>
+      <div class="credits">
+        <!-- All the links in the footer should remain intact. -->
+        <!-- You can delete the links only if you've purchased the pro version. -->
+        <!-- Licensing information: https://bootstrapmade.com/license/ -->
+        <!-- Purchase the pro version with working PHP/AJAX contact form: [buy-url] -->
+        Designed by <a href="https://www.finxl.in/">Finxl India</a>
+      </div>
+    </div>
+
+  </footer>
+
+
+
+
+
+
+  <!-- Scroll Top -->
+  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i
+      class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Preloader -->
+  <div id="preloader">
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+  </div>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
+  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="path/to/jquery.min.js"></script>
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js'></script>
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/Swiper/8.4.5/swiper-bundle.min.js'></script>
+
+
+
+
+  <!-- Main JS File -->
+  <script src="assets/js/main.js"></script>
+
+</body>
+
+</html>

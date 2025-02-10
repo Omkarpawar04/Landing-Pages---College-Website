@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>Registration Form</title>
+  <link href="/assets/img/icon.png" rel="icon">
+  <link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css'><link rel="stylesheet" href="./style.css">
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@7.12.15/dist/sweetalert2.all.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg"
+xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="100%" height="100%" viewBox="0 0 1600 900" preserveAspectRatio="xMidYMax slice">
+<defs>
+  <linearGradient id="bg">
+    <stop offset="0%" style="stop-color:rgba(130, 158, 249, 0.06)"></stop>
+    <stop offset="50%" style="stop-color:rgba(76, 190, 255, 0.6)"></stop>
+    <stop offset="100%" style="stop-color:rgba(115, 209, 72, 0.2)"></stop>
+  </linearGradient>
+  <path id="wave" fill="url(#bg)" d="M-363.852,502.589c0,0,236.988-41.997,505.475,0
+s371.981,38.998,575.971,0s293.985-39.278,505.474,5.859s493.475,48.368,716.963-4.995v560.106H-363.852V502.589z" />
+</defs>
+<g>
+  <use xlink:href='#wave' opacity=".3">
+    <animateTransform
+      attributeName="transform"
+      attributeType="XML"
+      type="translate"
+      dur="10s"
+      calcMode="spline"
+      values="270 230; -334 180; 270 230"
+      keyTimes="0; .5; 1"
+      keySplines="0.42, 0, 0.58, 1.0;0.42, 0, 0.58, 1.0"
+      repeatCount="indefinite" />
+  </use>
+  <use xlink:href='#wave' opacity=".6">
+    <animateTransform
+      attributeName="transform"
+      attributeType="XML"
+      type="translate"
+      dur="8s"
+      calcMode="spline"
+      values="-270 230;243 220;-270 230"
+      keyTimes="0; .6; 1"
+      keySplines="0.42, 0, 0.58, 1.0;0.42, 0, 0.58, 1.0"
+      repeatCount="indefinite" />
+  </use>
+  <use xlink:href='#wave' opacty=".9">
+    <animateTransform
+      attributeName="transform"
+      attributeType="XML"
+      type="translate"
+      dur="6s"
+      calcMode="spline"
+      values="0 230;-140 200;0 230"
+      keyTimes="0; .4; 1"
+      keySplines="0.42, 0, 0.58, 1.0;0.42, 0, 0.58, 1.0"
+      repeatCount="indefinite" />
+  </use>
+</g>
+</svg>
+<div class="row">
+  <section class="section">
+    <header>
+      <h3>Register</h3>
+      <h4>Please fill your information bellow</h4>
+    </header>
+    <main>
+      <form id="submit-to-google-sheet">
+        <div class="form-item box-item">
+          <input type="text" name="name" placeholder="Name" data-required>
+          <small class="errorReq">* Required field</small>
+        </div>
+        <div class="form-item box-item">
+          <input type="email" name="email" placeholder="Email" data-email data-required>
+          <small class="errorReq">* Required field</small>
+          <small class="errorEmail">* Email is not valid</small>
+        </div>
+        <div class="form-item box-item">
+          <input type="text" name="phone" placeholder="Phone" data-required data-number data-count="10">
+          <small class="errorReq">* Required field</small>
+          <small class="errorNum">* Must be a number</small>
+          <small class="errorChar">* Must be 10 digits</small>
+        </div>
+        <div class="form-item box-item">
+          <input type="text" name="education" placeholder="Education" data-required>
+          <small class="errorReq">* Required field</small>
+        </div>
+        <div class="form-item box-item">
+          <select name="courses" data-required>
+            <option value="">Select Course</option>
+            <option value="Financial Planning & Analysis (FP&A)">Financial Planning & Analysis (FP&A)</option>
+            <option value="Financial Modelling & Equity Research">Financial Modelling & Equity Research</option>
+            <option value="Financial Analyst">Financial Analyst</option>
+            <option value="Investment Banking">Investment Banking</option>
+            <option value="Startup Valuation">Startup Valuation</option>
+            <option value="Microsoft Power BI">Microsoft Power BI</option>
+            <option value="Excel Expert">Excel Expert</option>
+          </select>
+          <small class="errorReq">* Required field</small>
+        </div>
+        <div class="form-item box-item">
+          <input type="text" name="city" placeholder="City" data-required>
+          <small class="errorReq">* Required field</small>
+        </div>
+        <div class="form-item box-item">
+          <input class="form-check-input" type="checkbox" id="ex">
+          <label for="ex">I agree to the data terms and policies.</label>
+        </div>
+        <div class="form-item">
+          <button type="submit" class="submit">Submit</button>
+        </div>
+      </form>
+    </main>
+    <footer>
+      <p>Back to  <a href="/index.html">Home Page</a></p>
+    </footer>
+    <i class="wave"></i>
+  </section>
+</div>
+<div class="loader">
+  <div></div>
+  <div></div>
+  <div></div>
+</div>
+<!-- <script>
+  const scriptURL =
+    "https://script.google.com/macros/s/AKfycbyqeusJvN4CoofrewuztTTrjV-mJlXLSnQbYoQtOkhQZdRYvKWcJEetAwPtx709Q2xm/exec";
+  const form = document.forms["submit-to-google-sheet"];
+  form.addEventListener("submit", (e) => {
+    e.preventDefault();
+    var formData = new FormData(form);
+    var ex = document.getElementById("ex").checked;
+    if (ex) {
+      formData.append("ex", "Yes");
+    } else {
+      formData.append("ex", "No");
+    }
+
+    fetch(scriptURL, { method: "POST", body: formData })
+      .then((response) => {
+        swal("Done", "Submitted Successfully.", "success");
+      })
+      .catch((error) => {
+        swal("Error", "Something went wrong. please try again!", "error");
+      });
+  });
+</script> -->
+
+<!-- partial -->
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js'></script><script  src="./script.js"></script>
+
+</body>
+</html>
