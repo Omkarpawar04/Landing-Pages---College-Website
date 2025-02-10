@@ -3,13 +3,11 @@
 Welcome to my **Landing Pages Repository**! Here, you'll find modern and responsive landing pages built using **HTML, CSS, JavaScript, and Bootstrap**.  
 
 ## 🌟 Preview  
-![Landing Page Preview](registration-form/Landing Img .png)  
+![Landing Page Preview](registration-form/Landing-Img.png)  
 
 ## 📌 Features  
 ✅ Fully Responsive Design  
-✅ SEO Optimized  
 ✅ Easy to Customize  
-✅ Clean Code  
 
 ## 🛠 Technologies Used  
 - HTML5  
